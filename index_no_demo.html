@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>الشوبك الشرقي | سوقك الإلكتروني</title>
+<style>
+:root{--ink:#17251f;--green:#176b4d;--green2:#0d4937;--gold:#e8b45c;--paper:#f7f7f2;--muted:#68756e;--line:#e5e9e2;--white:#fff;--shadow:0 16px 40px #173c2b12}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Arial,sans-serif}button,input,select{font:inherit}button{cursor:pointer}.topline{background:#103d30;color:#eaf4ed;text-align:center;padding:9px 14px;font-size:13px}.wrap{width:min(1180px,92%);margin:auto}.nav{display:flex;align-items:center;gap:22px;padding:18px 0}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;min-width:max-content}.logo{height:47px;width:47px;border-radius:16px;background:linear-gradient(145deg,#e9bd68,#f5dfad);display:grid;place-items:center;color:#143d2f;font-size:25px;box-shadow:0 8px 18px #b68b3930}.brand b{font-size:21px;display:block}.brand small{color:var(--muted);font-size:11px}.search{flex:1;position:relative}.search input{width:100%;border:1px solid var(--line);border-radius:15px;background:white;padding:14px 45px 14px 14px;outline:none}.search:before{content:'⌕';position:absolute;right:17px;top:7px;font-size:26px;color:var(--muted)}.nav-actions{display:flex;gap:8px}.btn{border:0;border-radius:12px;padding:12px 16px;font-weight:700;transition:.2s}.btn:hover{transform:translateY(-1px)}.primary{background:var(--green);color:white}.primary:hover{background:var(--green2)}.soft{background:#eaf2ec;color:var(--green)}.iconbtn{background:white;border:1px solid var(--line);border-radius:12px;padding:10px 13px;color:var(--ink)}
+.hero{position:relative;overflow:hidden;border-radius:28px;min-height:365px;padding:clamp(28px,5vw,65px);display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(9,43,32,.96) 0%,rgba(12,61,43,.86) 48%,rgba(12,61,43,.22) 100%),url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1800&q=85') center/cover;box-shadow:var(--shadow)}.hero:after{content:'✦';position:absolute;left:8%;bottom:-65px;font-size:240px;color:#ffffff0d}.hero-copy{max-width:590px;position:relative;z-index:1}.eyebrow{display:inline-block;color:#f5d99d;border:1px solid #f5d99d66;border-radius:30px;padding:7px 12px;font-size:13px;margin-bottom:18px}.hero h1{font-size:clamp(32px,5vw,56px);line-height:1.22;margin:0 0 16px}.hero h1 span{color:#f0c775}.hero p{font-size:17px;line-height:1.9;color:#e0eee5;max-width:520px;margin:0 0 24px}.hero .primary{background:#f0c775;color:#173d2e;padding:14px 20px}.hero .outline{background:#ffffff12;color:white;border:1px solid #ffffff6b;margin-right:8px}.stats{display:flex;gap:24px;margin-top:28px;flex-wrap:wrap}.stat b{display:block;font-size:20px}.stat span{font-size:12px;color:#c5d8cc}.section{padding:35px 0 8px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-bottom:19px}.section-head h2{margin:0 0 6px;font-size:25px}.section-head p{margin:0;color:var(--muted);font-size:14px}.textlink{color:var(--green);font-weight:bold;text-decoration:none}.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:13px}.category{background:white;border:1px solid var(--line);border-radius:18px;padding:20px 10px;text-align:center;transition:.2s}.category:hover,.product:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.cat-icon{width:56px;height:56px;border-radius:18px;margin:0 auto 12px;display:grid;place-items:center;background:#edf5ed;font-size:27px}.category b{font-size:14px}.category small{display:block;color:var(--muted);margin-top:6px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0 18px}.filter{background:white;border:1px solid var(--line);border-radius:30px;padding:9px 15px;color:#53645a}.filter.active{background:var(--green);border-color:var(--green);color:white}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{background:white;border:1px solid var(--line);border-radius:19px;overflow:hidden;transition:.2s;box-shadow:0 4px 15px #183b2806}.product-img{height:185px;background:#e9eee7;position:relative;overflow:hidden}.product-img img{width:100%;height:100%;object-fit:cover;display:block}.tag{position:absolute;top:12px;right:12px;background:#fff;border-radius:20px;padding:6px 9px;font-size:11px;color:var(--green);font-weight:bold}.product-body{padding:14px}.store{font-size:12px;color:var(--muted);margin-bottom:7px}.product h3{font-size:16px;margin:0 0 10px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:8px}.price{font-size:18px;font-weight:bold;color:var(--green)}.old{font-size:12px;color:#9aa39c;text-decoration:line-through;margin-right:5px}.add{width:36px;height:36px;border:0;border-radius:12px;background:#eaf2ec;color:var(--green);font-size:22px}.shops{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.shop{display:flex;gap:14px;align-items:center;padding:18px;background:white;border:1px solid var(--line);border-radius:18px}.shop-avatar{height:65px;width:65px;border-radius:18px;object-fit:cover;background:#eaf2ec}.shop h3{margin:0 0 6px;font-size:16px}.shop p{margin:0 0 8px;font-size:12px;color:var(--muted)}.verified{font-size:11px;color:var(--green);font-weight:bold}.banner{margin:38px 0;background:linear-gradient(120deg,#174d39,#247755);border-radius:22px;color:white;padding:28px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px}.banner h2{margin:0 0 8px}.banner p{margin:0;color:#d9e9df;line-height:1.7}.footer{background:#102f25;color:#eaf3ed;margin-top:45px;padding:35px 0 20px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:25px}.footer p,.footer a{color:#c5d7cc;font-size:13px;line-height:1.9}.footer a{display:block;text-decoration:none}.copyright{border-top:1px solid #ffffff24;margin-top:25px;padding-top:17px;text-align:center;color:#c5d7cc;font-size:12px}.modal-back{position:fixed;inset:0;background:#081c15a8;z-index:10;display:none;align-items:center;justify-content:center;padding:18px}.modal-back.show{display:flex}.modal{width:min(460px,100%);max-height:90vh;overflow:auto;background:white;border-radius:22px;padding:25px;box-shadow:0 25px 90px #0003}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.modal-head h2{margin:0}.close{border:0;background:#eef3ef;border-radius:10px;padding:7px 11px;font-size:20px}.field{display:block;margin:12px 0}.field span{display:block;font-size:13px;font-weight:bold;margin-bottom:7px}.field input,.field select{width:100%;border:1px solid var(--line);border-radius:11px;padding:12px;background:#fbfcfa}.field small{color:var(--muted)}.notice{font-size:12px;line-height:1.7;color:var(--muted);background:#f2f6f1;padding:12px;border-radius:12px;margin-top:14px}.toast{position:fixed;bottom:20px;left:20px;z-index:20;background:#123e2e;color:white;padding:13px 18px;border-radius:13px;box-shadow:var(--shadow);display:none}.toast.show{display:block}
+@media(max-width:850px){.nav{flex-wrap:wrap;gap:12px}.brand{flex:1}.search{order:3;flex-basis:100%}.categories{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(2,1fr)}.shops{grid-template-columns:1fr 1fr}.hero{background-position:58% center}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:1/-1}}
+@media(max-width:520px){.wrap{width:93%}.nav-actions .btn{padding:10px;font-size:12px}.brand b{font-size:18px}.hero{min-height:420px;padding:27px 22px;background-position:62% center}.hero p{font-size:15px}.hero .outline{margin:8px 0 0}.stats{gap:16px}.categories{gap:8px}.category{padding:15px 6px}.cat-icon{width:48px;height:48px}.products{gap:10px}.product-img{height:145px}.product-body{padding:11px}.product h3{font-size:14px}.price{font-size:16px}.shops{grid-template-columns:1fr}.banner{padding:23px;align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-grid>div:first-child{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="topline">أهلاً بيك في الشوبك الشرقي — اكتشف متاجر ومنتجات من مكان واحد ✨</div>
+<header class="wrap"><nav class="nav"><a class="brand" href="#home"><span class="logo">ش</span><span><b>الشوبك الشرقي</b><small>سوقك الإلكتروني</small></span></a><div class="search"><input id="searchInput" placeholder="بتدور على إيه النهارده؟" aria-label="البحث عن المنتجات"></div><div class="nav-actions"><button class="iconbtn" id="cartBtn">🛒 <span id="cartCount">0</span></button><button class="btn soft" data-modal="login">دخول التاجر</button></div></nav></header>
+<main class="wrap" id="home">
+<section class="hero"><div class="hero-copy"><span class="eyebrow">سوق واحد • اختيارات بلا حدود</span><h1>كل اللي بتحبه،<br><span>في مكان واحد.</span></h1><p>اكتشف منتجات مميزة من متاجر متنوعة، قارن واختار اللي يناسبك واطلبه لحد باب البيت بكل سهولة.</p><button class="btn primary" onclick="document.getElementById('productsSection').scrollIntoView({behavior:'smooth'})">اكتشف المنتجات ←</button><button class="btn outline" data-modal="register">افتح متجرك</button><div class="stats"><div class="stat"><b>متاجر متنوعة</b><span>تصفح بحرية</span></div><div class="stat"><b>طلب سهل</b><span>خطوات بسيطة</span></div><div class="stat"><b>تجربة عربية</b><span>مصممة ليك</span></div></div></div></section>
+<section class="section"><div class="section-head"><div><h2>تسوّق حسب القسم</h2><p>اختار القسم وابدأ اكتشافك</p></div></div><div class="categories"><button class="category" data-category="الكل"><div class="cat-icon">✨</div><b>الكل</b><small>كل المنتجات</small></button><button class="category" data-category="إلكترونيات"><div class="cat-icon">🎧</div><b>إلكترونيات</b><small>أجهزة وإكسسوارات</small></button><button class="category" data-category="ملابس"><div class="cat-icon">👕</div><b>ملابس</b><small>ستايلك الخاص</small></button><button class="category" data-category="المنزل"><div class="cat-icon">🏡</div><b>المنزل</b><small>تفاصيل مريحة</small></button><button class="category" data-category="جمال"><div class="cat-icon">🌿</div><b>جمال وعناية</b><small>اهتم بنفسك</small></button><button class="category" data-category="أخرى"><div class="cat-icon">🎁</div><b>هدايا وأخرى</b><small>اختيارات مميزة</small></button></div></section>
+<section class="section" id="productsSection"><div class="section-head"><div><h2>منتجات مختارة ليك</h2><p>دي أمثلة للعرض، وتقدر تستبدلها بمنتجات التجار الفعلية</p></div><a href="#productsSection" class="textlink" id="showAll">عرض الكل ←</a></div><div class="filters"><button class="filter active" data-category="الكل">الكل</button><button class="filter" data-category="إلكترونيات">إلكترونيات</button><button class="filter" data-category="ملابس">ملابس</button><button class="filter" data-category="المنزل">المنزل</button><button class="filter" data-category="جمال">جمال وعناية</button><button class="filter" data-category="أخرى">هدايا وأخرى</button></div><div class="products" id="productGrid"></div><p id="emptyState" style="display:none;color:var(--muted);text-align:center;padding:28px">مفيش منتجات مطابقة للبحث حاليًا.</p></section>
+<section class="section"><div class="section-head"><div><h2>متاجر تستحق الاكتشاف</h2><p>كل متجر له صفحته الخاصة ومنتجاته</p></div><button class="btn soft" data-modal="register">سجّل متجرك</button></div><div class="shops" id="shopsGrid"><p class="notice">جارٍ تحميل المتاجر من قاعدة البيانات...</p></div></section>
+<section class="banner"><div><h2>عندك مشروع أو متجر؟</h2><p>اعمل صفحة لمتجرك واعرض منتجاتك — تسجيل التجار مخصص لإدارة المتجر، أما التصفح فمتاح للجميع.</p></div><button class="btn" style="background:#f0c775;color:#173d2e" data-modal="register">ابدأ بإنشاء متجرك ←</button></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footer-grid"><div><a class="brand" href="#home" style="color:white"><span class="logo">ش</span><span><b>الشوبك الشرقي</b><small style="color:#c5d7cc">سوقك الإلكتروني</small></span></a><p>منصة تجمع المتاجر والمنتجات في تجربة عربية سهلة. تصفح المنتجات بحرية، وسجّل كتاجر لإدارة متجرك.</p></div><div><b>روابط سريعة</b><a href="#productsSection">المنتجات</a><a href="#home">الرئيسية</a><a href="#">سياسة الخصوصية (تُضاف قبل الإطلاق)</a></div><div><b>صاحب الموقع</b><p style="margin-bottom:4px">عمر ابو نوفل</p><p>الشوبك الشرقي — سوق إلكتروني</p></div></div><div class="copyright">© 2026 الشوبك الشرقي. جميع الحقوق محفوظة. | تصميم وإشراف: عمر ابو نوفل</div></div></footer>
+<div class="modal-back" id="modalBack"><div class="modal"><div class="modal-head"><h2 id="modalTitle">دخول التاجر</h2><button class="close" id="closeModal" aria-label="إغلاق">×</button></div><form id="sellerForm"><div id="formFields"></div><button class="btn primary" style="width:100%;margin-top:8px" id="submitSeller">دخول</button></form><div class="notice" id="modalNotice">تسجيل الدخول والمنتجات والطلبات تُدار عبر Supabase. لا تشارك كلمة مرورك مع أي شخص.</div></div></div><div class="toast" id="toast"></div>
+<div class="modal-back" id="cartBack"><div class="modal"><div class="modal-head"><h2>سلة المشتريات والطلب</h2><button class="close" id="closeCart">×</button></div><div id="cartItems"></div><form id="checkoutForm"><label class="field"><span>اسم المستلم</span><input id="buyerName" required placeholder="اسمك"></label><label class="field"><span>رقم الهاتف</span><input id="buyerPhone" required inputmode="tel" placeholder="01xxxxxxxxx"></label><label class="field"><span>عنوان البيت بالتفصيل</span><input id="buyerAddress" required placeholder="المحافظة، المنطقة، الشارع، رقم البيت"></label><label class="field"><span>ملاحظات للطلب (اختياري)</span><input id="buyerNotes" placeholder="علامة مميزة أو وقت مناسب"></label><button class="btn primary" style="width:100%">تأكيد الطلب</button></form><div class="notice">سيُرسل الطلب إلى قاعدة البيانات. تأكد من صحة بيانات الطلب قبل التأكيد.</div></div></div>
+<div class="modal-back" id="shopBack"><div class="modal"><div class="modal-head"><h2 id="shopTitle">صفحة المتجر</h2><button class="close" id="closeShop">×</button></div><div id="shopContent"></div></div></div>
+
+<div class="modal-back" id="ordersBack"><div class="modal"><div class="modal-head"><h2>طلبات متجري</h2><button class="close" id="closeOrders">×</button></div><p class="notice">تظهر هنا الطلبات المرتبطة بمنتجات متجرك والمسجلة في قاعدة البيانات.</p><div id="ordersList"></div></div></div>
+<div class="modal-back" id="detailsBack"><div class="modal"><div class="modal-head"><h2 id="detailsTitle">تفاصيل المنتج</h2><button class="close" id="closeDetails">×</button></div><div id="detailsContent"></div></div></div>\n<div class="modal-back" id="productBack"><div class="modal"><div class="modal-head"><h2>إضافة منتج لمتجرك</h2><button class="close" id="closeProduct">×</button></div><form id="productForm"><label class="field"><span>اسم المنتج</span><input id="newProductName" required></label><label class="field"><span>القسم</span><select id="newProductCategory"><option>إلكترونيات</option><option>ملابس</option><option>المنزل</option><option>جمال</option><option>أخرى</option></select></label><label class="field"><span>السعر بالجنيه المصري</span><input id="newProductPrice" type="number" min="1" required></label><label class="field"><span>صور المنتج من معرض الهاتف (يمكن اختيار عدة صور)</span><input id="newProductImage" type="file" accept="image/*" multiple required><small>اختر صورة واحدة أو عدة صور للمنتج من المعرض.</small></label>
+<label class="field"><span>وصف المنتج بالتفصيل</span><textarea id="newProductDescription" rows="3" required placeholder="اكتب تفاصيل المنتج ومميزاته..."></textarea></label>
+<label class="field"><span>الكمية المتاحة</span><input id="newProductStock" type="number" min="0" value="1" required></label>
+<label class="field"><span>حالة المنتج</span><select id="newProductCondition"><option>جديد</option><option>مستعمل بحالة ممتازة</option><option>مستعمل بحالة جيدة</option></select></label><button class="btn primary" style="width:100%">إضافة المنتج</button></form></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+/*
+  Supabase browser configuration:
+  The publishable key is intended for browser use. Database access is protected by RLS.
+*/
+const SUPABASE_URL = 'https://todrgunmafdugmeotbzg.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_O3mrmu6wSGFVrJHQHbsAlg_7vghjqCG';
+const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+const currentUser = async () => (await sb.auth.getUser()).data.user;
+
+const products=[];
+// A safe fallback image is used if a remote image fails to load.
+const fallback='https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80';
+let activeCategory='الكل',cart=0;
+const grid=document.getElementById('productGrid'),search=document.getElementById('searchInput');
+async function ensureShopForUser(user){
+ if(!user)return null;
+ const {data:existing,error:readError}=await sb.from('shops').select('*').eq('owner_id',user.id).maybeSingle();
+ if(readError) throw readError;
+ if(existing){sellerStore={name:user.user_metadata?.trader_name||existing.name,store:existing.name,desc:existing.description||'',img:existing.image_url||''};return existing}
+ const storeName=user.user_metadata?.store_name;
+ if(!storeName)return null;
+ const {data:created,error}=await sb.from('shops').insert({
+   owner_id:user.id,name:storeName,
+   description:user.user_metadata?.store_description||'',
+   image_url:null
+ }).select().single();
+ if(error) throw error;
+ sellerStore={name:user.user_metadata?.trader_name||storeName,store:storeName,desc:created.description||'',img:''};
+ return created;
+}
+async function loadRemoteShops(){
+ const box=document.getElementById('shopsGrid');
+ if(!box)return;
+ const {data,error}=await sb.from('shops').select('id,name,description,image_url').order('created_at',{ascending:false});
+ if(error){console.error(error);box.innerHTML='<p class="notice">تعذر تحميل المتاجر. تأكد من إعداد قاعدة البيانات.</p>';return}
+ box.innerHTML=(data||[]).length?(data||[]).map(s=>`<article class="shop" role="button" tabindex="0" data-shop="${String(s.name||'').replace(/"/g,'&quot;')}"><img class="shop-avatar" src="${s.image_url||fallback}" alt="صورة المتجر" onerror="this.onerror=null;this.src='${fallback}'"><div><h3>${safeText(s.name||'متجر')}</h3><p>${safeText(s.description||'')}</p><span class="verified">● متجر مسجل</span></div></article>`).join(''):'<p class="notice">لا توجد متاجر مسجلة حتى الآن. سجّل متجرك لعرضه هنا.</p>';
+ box.querySelectorAll('[data-shop]').forEach(el=>{el.addEventListener('click',()=>openShop(el.dataset.shop));el.addEventListener('keydown',e=>{if(e.key==='Enter')openShop(el.dataset.shop)})});
+}
+async function loadRemoteProducts(){
+ const {data,error}=await sb.from('products').select('id,name,category,price,description,stock,condition_label,image_urls,shop_id,shops(name)').eq('is_active',true).order('created_at',{ascending:false});
+ if(error){console.error(error);toast('تعذر تحميل المنتجات من Supabase.');return}
+ const remote=(data||[]).map(p=>({id:p.id,name:p.name,store:p.shops?.name||'متجر',category:p.category||'أخرى',price:Number(p.price),old:'',tag:'منتج',img:(p.image_urls||[])[0]||fallback,images:p.image_urls||[],description:p.description||'',stock:p.stock,condition:p.condition_label||'غير محدد'}));
+ const remoteIds=new Set(remote.map(p=>String(p.id)));
+ for(let i=products.length-1;i>=0;i--){if(typeof products[i].id==='string'&&remoteIds.has(String(products[i].id)))products.splice(i,1)}
+ products.splice(0,products.length,...products.filter(p=>typeof p.id==='number'),...remote);
+ sellerProducts=remote.filter(p=>sellerStore&&p.store===sellerStore.store);
+ render();
+}
+function showSellerTools(){
+ const banner=document.querySelector('.banner');
+ if(!banner)return;
+ if(!document.getElementById('manageStoreBtn')){
+   banner.insertAdjacentHTML('beforeend','<button class="btn primary" id="manageStoreBtn">إدارة متجري وإضافة منتج</button><button class="btn soft" id="sellerOrdersBtn">عرض طلبات متجري</button>');
+   document.getElementById('manageStoreBtn').onclick=()=>document.getElementById('productBack').classList.add('show');
+   document.getElementById('sellerOrdersBtn').onclick=openSellerOrders;
+ }
+}
+sb.auth.onAuthStateChange((_event,session)=>{
+ if(session?.user){
+   // Defer database calls until after the auth callback releases its internal lock.
+   setTimeout(async()=>{try{await ensureShopForUser(session.user);showSellerTools();await loadRemoteProducts()}catch(e){console.error(e)}},0);
+ }
+});
+function render(){const q=search.value.trim().toLowerCase();const shown=products.filter(p=>(activeCategory==='الكل'||p.category===activeCategory)&&(p.name+' '+p.store+' '+p.category).toLowerCase().includes(q));grid.innerHTML=shown.map((p,i)=>`<article class="product" style="cursor:pointer" onclick="openDetails(${JSON.stringify(p.id ?? p.name).replace(/"/g,'&quot;')})"><div class="product-img"><img src="${p.img}" alt="${p.name}" onerror="this.onerror=null;this.src='${fallback}'"><span class="tag">${p.tag||'منتج'}</span>${(p.images&&p.images.length>1)?`<span class="tag" style="right:8px;left:auto;top:38px">${p.images.length} صور</span>`:''}</div><div class="product-body"><div class="store" onclick="event.stopPropagation();openShop('${p.store.replace(/'/g,"\\'")}')">${p.store} · ${p.category}</div><h3>${p.name}</h3><div class="price-row"><div class="price">${Number(p.price).toLocaleString('ar-EG')} ج.م</div><button class="add" aria-label="إضافة ${p.name} للسلة" onclick="event.stopPropagation();addCart('${p.name.replace(/'/g,"\\'")}')">+</button></div><small>اضغط لعرض التفاصيل</small></div></article>`).join('');document.getElementById('emptyState').style.display=shown.length?'none':'block'}
+function setCategory(cat){activeCategory=cat;document.querySelectorAll('[data-category]').forEach(b=>b.classList.toggle('active',b.dataset.category===cat));render()}
+document.querySelectorAll('[data-category]').forEach(b=>b.addEventListener('click',()=>setCategory(b.dataset.category)));search.addEventListener('input',render);document.getElementById('showAll').addEventListener('click',()=>setCategory('الكل'));
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2600)}
+let cartItems=[];let sellerStore=null;let sellerProducts=[];
+function addCart(name){const p=products.find(x=>x.name===name)||sellerProducts.find(x=>x.name===name);if(!p)return;const found=cartItems.find(x=>x.name===name);if(found)found.qty++;else cartItems.push({...p,qty:1});cart=cartItems.reduce((n,x)=>n+x.qty,0);document.getElementById('cartCount').textContent=cart;toast('تمت إضافة «'+name+'» للسلة.')}
+function openCart(){document.getElementById('cartBack').classList.add('show');const box=document.getElementById('cartItems');box.innerHTML=cartItems.length?cartItems.map((p,i)=>`<div style="display:flex;gap:10px;align-items:center;border-bottom:1px solid #e5e9e2;padding:10px 0"><img src="${p.img}" style="width:58px;height:58px;object-fit:cover;border-radius:10px"><div style="flex:1"><b>${p.name}</b><div>${p.price} ج.م × ${p.qty}</div></div><button type="button" class="btn soft" onclick="removeCart(${i})">حذف</button></div>`).join('')+`<h3>الإجمالي: ${cartItems.reduce((n,p)=>n+p.price*p.qty,0)} ج.م</h3>`:'<p>السلة فارغة. أضف منتجًا أولًا.</p>';document.getElementById('checkoutForm').style.display=cartItems.length?'block':'none'}
+function removeCart(i){cartItems.splice(i,1);cart=cartItems.reduce((n,x)=>n+x.qty,0);document.getElementById('cartCount').textContent=cart;openCart()}
+document.getElementById('cartBtn').onclick=openCart;document.getElementById('closeCart').onclick=()=>document.getElementById('cartBack').classList.remove('show');
+document.getElementById('checkoutForm').addEventListener('submit', async e=>{
+ e.preventDefault();
+ if(!cartItems.length){toast('السلة فارغة.');return}
+ const total=cartItems.reduce((n,p)=>n+Number(p.price)*p.qty,0);
+ const user=await currentUser();
+ const {data:order,error}=await sb.from('orders').insert({
+   buyer_user_id:user?.id||null,
+   buyer_name:document.getElementById('buyerName').value.trim(),
+   buyer_phone:document.getElementById('buyerPhone').value.trim(),
+   buyer_address:document.getElementById('buyerAddress').value.trim(),
+   notes:document.getElementById('buyerNotes').value.trim(),
+   total_amount:total,
+   status:'جديد'
+ }).select('id').single();
+ if(error){console.error(error);toast('تعذر حفظ الطلب. تأكد من إعداد جداول Supabase وسياساتها.');return}
+ const rows=cartItems.map(p=>({order_id:order.id,product_id:typeof p.id==='number'?null:p.id,product_name:p.name,store_name:p.store,unit_price:Number(p.price),quantity:p.qty}));
+ const {error:itemError}=await sb.from('order_items').insert(rows);
+ if(itemError){console.error(itemError);toast('تم إنشاء الطلب لكن تعذر حفظ تفاصيله؛ راجع إعداد قاعدة البيانات.');return}
+ cartItems=[];cart=0;document.getElementById('cartCount').textContent='0';
+ document.getElementById('cartBack').classList.remove('show');toast('تم إرسال الطلب بنجاح.');e.target.reset();
+});
+function openShop(name){const shopProducts=[...products,...sellerProducts].filter(p=>p.store===name);document.getElementById('shopTitle').textContent=name;document.getElementById('shopContent').innerHTML=`<p style="color:var(--muted)">منتجات متجر ${name}</p>`+(shopProducts.length?shopProducts.map(p=>`<div style="display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #eee"><img src="${p.img}" style="width:70px;height:70px;object-fit:cover;border-radius:12px"><div style="flex:1"><b>${p.name}</b><p>${p.price} ج.م</p></div><button class="btn soft" onclick="addCart('${p.name.replace(/'/g,"\\'")}')">أضف للسلة</button></div>`).join(''):'<p>لا توجد منتجات في هذا المتجر بعد.</p>');document.getElementById('shopBack').classList.add('show')}
+document.querySelectorAll('[data-shop]').forEach(el=>{el.addEventListener('click',()=>openShop(el.dataset.shop));el.addEventListener('keydown',e=>{if(e.key==='Enter')openShop(el.dataset.shop)})});document.getElementById('closeShop').onclick=()=>document.getElementById('shopBack').classList.remove('show');
+
+const back=document.getElementById('modalBack'),title=document.getElementById('modalTitle'),fields=document.getElementById('formFields'),submit=document.getElementById('submitSeller');let mode='login';function openModal(m){mode=m;title.textContent=m==='login'?'دخول التاجر':'إنشاء حساب تاجر ومتجر';submit.textContent=m==='login'?'دخول':'إنشاء حساب';fields.innerHTML=(m==='register'?'<label class="field"><span>اسم التاجر</span><input required placeholder="اكتب اسمك"></label><label class="field"><span>اسم المتجر</span><input required placeholder="اسم متجرك التجاري"></label><label class="field"><span>صورة المتجر من معرض الهاتف</span><input id="storeImageFile" type="file" accept="image/*"><small>اختار صورة المتجر من المعرض.</small></label><label class="field"><span>وصف المتجر</span><input placeholder="بتبيع إيه؟"></label>':'')+'<label class="field"><span>البريد الإلكتروني</span><input type="email" required placeholder="name@example.com"></label><label class="field"><span>كلمة المرور</span><input type="password" required minlength="6" placeholder="6 أحرف على الأقل"></label>';back.classList.add('show')}document.querySelectorAll('[data-modal]').forEach(b=>b.addEventListener('click',()=>openModal(b.dataset.modal)));document.getElementById('closeModal').onclick=()=>back.classList.remove('show');back.addEventListener('click',e=>{if(e.target===back)back.classList.remove('show')});// Demo account and product management (browser-local only; not secure production authentication).
+document.getElementById('sellerForm').addEventListener('submit',async e=>{
+ e.preventDefault();
+ const vals=[...fields.querySelectorAll('input')];
+ submit.disabled=true;submit.textContent='جارٍ التنفيذ...';
+ try {
+   if(mode==='register'){
+     const traderName=vals[0]?.value.trim();
+     const storeName=vals[1]?.value.trim();
+     const storeFile=document.getElementById('storeImageFile')?.files?.[0]||null;
+     const description=vals[3]?.value.trim()||'';
+     const email=vals[4]?.value.trim();
+     const password=vals[5]?.value;
+     const {data,error}=await sb.auth.signUp({
+       email,password,
+       options:{data:{trader_name:traderName,store_name:storeName,store_description:description}}
+     });
+     if(error) throw error;
+     if(data.session){
+       await ensureShopForUser(data.user);
+       await loadRemoteProducts();
+       toast('تم إنشاء الحساب وربط المتجر.');
+     } else {
+       toast('تم إرسال رابط تأكيد البريد إن كان التأكيد مفعّلًا. أكّد البريد ثم سجّل الدخول.');
+     }
+     back.classList.remove('show');
+   } else {
+     const email=vals[0]?.value.trim(), password=vals[1]?.value;
+     const {data,error}=await sb.auth.signInWithPassword({email,password});
+     if(error) throw error;
+     await ensureShopForUser(data.user);
+     await loadRemoteProducts();
+     back.classList.remove('show');
+     toast('تم تسجيل الدخول بنجاح.');
+     showSellerTools();
+   }
+ } catch(err) {
+   console.error(err);toast(err.message||'حدث خطأ أثناء تسجيل الدخول.');
+ } finally {
+   submit.disabled=false;submit.textContent=mode==='login'?'دخول':'إنشاء حساب';
+ }
+});
+document.getElementById('closeProduct').onclick=()=>document.getElementById('productBack').classList.remove('show');
+async function openSellerOrders(){
+ const user=await currentUser();
+ if(!user){toast('سجّل دخول التاجر أولًا.');return}
+ const list=document.getElementById('ordersList');
+ list.innerHTML='<p>جارٍ تحميل الطلبات...</p>';
+ document.getElementById('ordersBack').classList.add('show');
+ const {data:orders,error}=await sb.from('orders').select('id,buyer_name,buyer_phone,buyer_address,notes,total_amount,status,created_at,order_items(product_name,store_name,unit_price,quantity,product_id)').order('created_at',{ascending:false});
+ if(error){console.error(error);list.innerHTML='<p>تعذر تحميل الطلبات. تأكد من تطبيق سياسات قاعدة البيانات.</p>';return}
+ const mine=(orders||[]).map(o=>({...o,items:(o.order_items||[]).filter(i=>i.store_name===(sellerStore?.store||''))})).filter(o=>o.items.length);
+ list.innerHTML=mine.length?mine.map((o,i)=>`<div style="border:1px solid #e3e7e0;border-radius:14px;padding:12px;margin:10px 0"><div style="display:flex;justify-content:space-between;gap:8px"><b>طلب #${i+1}</b><b>${Number(o.total_amount).toLocaleString('ar-EG')} ج.م</b></div><p><b>العميل:</b> ${safeText(o.buyer_name)}</p><p><b>الهاتف:</b> <a href="tel:${safeText(o.buyer_phone)}">${safeText(o.buyer_phone)}</a></p><p><b>العنوان:</b> ${safeText(o.buyer_address)}</p><p><b>ملاحظات:</b> ${safeText(o.notes||'لا توجد')}</p><p><b>المنتجات:</b> ${o.items.map(p=>`${safeText(p.product_name)} × ${p.quantity} — ${p.unit_price} ج.م`).join('<br>')}</p><p><b>الحالة:</b> ${safeText(o.status)}</p></div>`).join(''):'<p>لا توجد طلبات لمنتجات متجرك حتى الآن.</p>';
+}
+
+document.getElementById('closeOrders').onclick=()=>document.getElementById('ordersBack').classList.remove('show');
+
+document.getElementById('productForm').addEventListener('submit',async e=>{
+ e.preventDefault();
+ const user=await currentUser();
+ if(!user){toast('سجّل دخول التاجر أولًا.');return}
+ const {data:shop,error:shopErr}=await sb.from('shops').select('id,name').eq('owner_id',user.id).maybeSingle();
+ if(shopErr||!shop){toast('لم يتم العثور على متجرك. سجّل الدخول مرة أخرى.');return}
+ const files=[...document.getElementById('newProductImage').files];
+ if(!files.length){toast('اختار صورة للمنتج.');return}
+ const imageUrls=[];
+ try {
+   for(const file of files){
+     const ext=(file.name.split('.').pop()||'jpg').replace(/[^a-zA-Z0-9]/g,'').slice(0,8)||'jpg';
+     const path=`${user.id}/${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
+     const {error:uploadError}=await sb.storage.from('product-images').upload(path,file,{upsert:false,contentType:file.type||'image/jpeg'});
+     if(uploadError) throw uploadError;
+     const {data:urlData}=sb.storage.from('product-images').getPublicUrl(path);
+     imageUrls.push(urlData.publicUrl);
+   }
+   const payload={
+     shop_id:shop.id,owner_id:user.id,name:document.getElementById('newProductName').value.trim(),
+     category:document.getElementById('newProductCategory').value,
+     price:Number(document.getElementById('newProductPrice').value),
+     description:document.getElementById('newProductDescription').value.trim(),
+     stock:Number(document.getElementById('newProductStock').value),
+     condition_label:document.getElementById('newProductCondition').value,
+     image_urls:imageUrls
+   };
+   const {data:row,error}=await sb.from('products').insert(payload).select().single();
+   if(error) throw error;
+   const p={id:row.id,name:row.name,store:shop.name,category:row.category,price:row.price,old:'',tag:'منتج جديد',img:imageUrls[0],images:imageUrls,description:row.description,stock:row.stock,condition:row.condition_label};
+   sellerProducts.push(p);products.push(p);render();
+   document.getElementById('productBack').classList.remove('show');e.target.reset();toast('تم حفظ المنتج في قاعدة البيانات.');
+ } catch(err){console.error(err);toast(err.message||'تعذر حفظ المنتج. راجع إعداد Storage وسياسات الأمان.')}
+});
+function openDetails(id){
+ const p=products.find(x=>String(x.id??x.name)===String(id))||sellerProducts.find(x=>String(x.id??x.name)===String(id));if(!p)return;
+ document.getElementById('detailsTitle').textContent=p.name;
+ const images=p.images&&p.images.length?p.images:[p.img];
+ document.getElementById('detailsContent').innerHTML=`<div style="display:flex;gap:8px;overflow:auto;margin-bottom:12px">${images.map((im,i)=>`<img src="${im}" alt="صورة ${i+1}" style="width:145px;height:145px;object-fit:cover;border-radius:14px;flex-shrink:0">`).join('')}</div><p><b>السعر:</b> ${Number(p.price).toLocaleString('ar-EG')} ج.م</p><p><b>المتجر:</b> <a href="#" onclick="event.preventDefault();document.getElementById('detailsBack').classList.remove('show');openShop('${p.store.replace(/'/g,"\\\\'")}')">${p.store}</a></p><p><b>القسم:</b> ${p.category||'أخرى'}</p><p><b>الحالة:</b> ${p.condition||'غير محدد'}</p><p><b>المتاح:</b> ${p.stock===undefined?'متوفر':p.stock+' قطعة'}</p><p><b>الوصف:</b><br>${(p.description||'لم يضف التاجر وصفًا بعد.').replace(/</g,'&lt;')}</p><button class="btn primary" style="width:100%" onclick="addCart('${p.name.replace(/'/g,"\\\\'")}')">أضف إلى السلة</button>`;
+ document.getElementById('detailsBack').classList.add('show');
+}
+document.getElementById('closeDetails').onclick=()=>document.getElementById('detailsBack').classList.remove('show');
+
+render();
+(async()=>{const {data:{session}}=await sb.auth.getSession();if(session?.user){try{await ensureShopForUser(session.user);showSellerTools()}catch(e){console.error(e);toast('تعذر تهيئة حساب التاجر.')}}await Promise.all([loadRemoteProducts(),loadRemoteShops()]);})();
+</script>
+</body></html>
